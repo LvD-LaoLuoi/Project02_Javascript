@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="./project4.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <title>Project 4</title>
+</head>
+<body class="preloading">
+    <!-- Loading! -->
+    <div class="load">
+        <img src="./icons/fan.svg" alt="loading" class="icon__loading">
+    </div>
+
+    <!-- Navigation -->
+    <div id="myNews">
+        <h2 class="heading__text">My News</h2>
+        <a href="#"><img src="./icons/search.svg" alt="search" class="icon__search"></a>
+    </div>
+
+    <!-- content -->
+    <div>
+        <!-- render data -->
+        <div id="myDIV"></div>
+        <!-- Search with date -->
+        <div class="box__3" style="display: none"></div>
+        <div class="search__date" style="display: none">
+            <label for="p" class="keyword">Keywords:</label>
+            <input type="text" id="myInput" name="p">
+        
+            <label for="begin__date" class="from__text">from:</label>
+            <input type="date" id="from" name="begin__date">
+        
+            <label for="end__date" class="to__text">to:</label>
+            <input type="date" id="to" name="end__date">
+            <button id="btn">Search</button>
+            <img src="./icons/xmark.svg" alt="xmark" class="xmark">
+        </div>
+        
+            
+    </div>
+
+    <!-- javascript and jquery -->
+    <script src="./project4.js"></script>
+</body>
+</html>
